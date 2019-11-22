@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="200.0" prefWidth="320.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="finalproject.OPurchaseController">
+   <children>
+      <Label layoutX="88.0" layoutY="26.0" text="Online Purchases">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="62.0" text="\$" />
+      <TextField fx:id="amountfield" layoutX="58.0" layoutY="58.0" prefHeight="25.0" prefWidth="198.0" promptText="Enter an amount more than $50" />
+      <Label fx:id="purchaselabel" layoutX="37.0" layoutY="100.0" prefHeight="17.0" prefWidth="188.0" />
+      <Button fx:id="purchasebtn" layoutX="243.0" layoutY="148.0" mnemonicParsing="false" onAction="#handlePurchaseAction" text="Purchase" />
+      <Button fx:id="backbtn" layoutX="37.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleBackAction" text="Back" />
+      <Button fx:id="calcbtn" layoutX="242.0" layoutY="96.0" mnemonicParsing="false" onAction="#handleCalculateAction" text="Calculate" />
+   </children>
+</AnchorPane>
